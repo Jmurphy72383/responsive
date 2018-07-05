@@ -1,0 +1,544 @@
+body {
+    z-index: 1;
+}
+
+
+
+/* Fonts */
+h1, h2, h3 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+p, label, li {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+
+
+/* Background Image */
+body {
+    background-image: url('../images/vintage-concrete.png');
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 3px solid #cccccc;
+}
+
+
+
+/* Main Navigation */
+nav, ul {
+    float: right;
+}
+
+li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 30px;
+    color: grey;
+    padding-right: 17px;
+    border-right: solid 1px lightgrey;
+}
+
+.list {
+    border: none;
+}
+
+
+
+/* Psuedo Links */
+a li:visited {
+    color:#4aaaa5;
+}
+
+a li:hover {
+    color: firebrick;
+}
+
+a li:active {
+    color: #4aaaa5;
+}
+
+button:hover {
+    color: firebrick;
+}
+
+button:active {
+    color: black;
+}
+
+
+
+/* Headlines */
+h1 {
+    float: left;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    background-color: #4aaaa5;
+    margin-bottom: 0;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #4aaaa5;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 3px solid lightgrey;
+}
+
+
+
+/* Body Styles */
+.wrapper {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-content {
+    background-color: #ffffff;
+    border: 2px solid #dddddd;
+    margin-top: 50px;
+    padding-left:15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+}
+
+.floats {
+    padding-top: 25px;
+}
+
+.floats img {
+    float: left;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+
+.floats p {
+    line-height: 2em;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+
+/* Footer Styles */
+.sticky {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    background-color: #666666;
+}
+
+footer {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    color: white;
+    bottom: 0;
+    background-color: #666666;
+}
+
+footer, p {
+    margin-top: 40px;
+}
+
+.line {
+    width: 100%;
+    height: 10px;
+    background-color: #4aaaa5;
+}
+
+
+
+/* Clearfix */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* Form/Contact */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+#name {
+    width: 100%;
+}
+
+#email {
+    width: 100%;
+}
+
+#message {
+    width: 100%;
+    height: 200px;
+}
+
+button {
+    background-color: #4aaaa5;
+    padding: 10px 30px;
+    color: white;
+    margin-top: 20px;
+}
+
+
+
+/* Portfolio Picture Columns */
+img {
+    position: relative;
+}
+
+.portfolio {
+    position: relative;
+}
+
+
+.row1 {
+    width: 500px;
+}
+
+.row1, .hangman {
+    float: left;
+    padding-right: 30px;
+    padding-top: 15px;
+}
+
+.row1, .rpg {
+    float: left;
+    padding-top: 15px;
+}
+
+.row2 {
+    width: 500px;
+}
+
+
+.row2, .trivia {
+    float: left;
+    padding-right: 30px;
+    padding-top: 15px;
+}
+
+.row2, .widget {
+    float: left;
+    padding-top: 15px;
+}
+
+.row3 {
+    width: 200px;
+}
+
+.row3, .rock {
+    padding-top: 30px;
+}
+
+
+
+/* Image Banners */
+.rockpaper {
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    background-color: #4aaaa5;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 15px;
+}
+
+.hang {
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    top: 130px;
+}
+
+.tgame {
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    background-color: #4aaaa5;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    top: 308px;
+}
+
+.rpggame {
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    background-color: #4aaaa5;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    top: 130px;
+    left: 230px;
+}
+
+.riw {
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    background-color: #4aaaa5;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    top: 308px;
+    left: 230px;
+}
+
+/* Media Queries */
+
+@media (max-width: 980px) {
+    .wrapper .main-content {
+        width: 550px;
+        margin-left: 35px;
+        
+    }
+
+    h1 {
+        margin-left: 35px;
+    }
+
+    nav {
+        margin-right: 35px;
+    }
+
+    .sticky {
+        width: 100%;
+        height: 70px;
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        color: white;
+        background-color: #666666; 
+    }
+
+}
+
+@media (max-width: 768px) {
+    body {
+        max-width: 768px;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    .wrapper .main-content {
+        width: 675px;
+        margin-left: 15px;
+        
+    }
+
+    h1 {
+        margin-left: 15px;
+    }
+
+    nav {
+        margin-right: 220px;
+    }
+
+    .row1 {
+        width: 675px;
+    }
+
+    .row1 img {
+        width: 322px;
+    }
+
+    .row2 {
+        width: 675px;
+    }
+
+    .row2 img {
+        width: 322px;
+    }
+
+    .row3 img{
+        width: 322px;
+    }
+
+    .hang {
+        position: absolute;
+        width: 322px;
+        height: 30px;
+        top: 195px;
+        font-size: 20px;
+        padding-top: 15px;
+    }
+
+    .rpggame {
+        position: absolute;
+        width: 322px;
+        height: 30px;
+        top: 195px;
+        left: 352px;
+        font-size: 20px;
+        padding-top: 15px;
+    }
+
+    .tgame {
+        position: absolute;
+        width: 322px;
+        height: 30px;
+        top: 465px;
+        left: 0px;
+        font-size: 20px;
+        padding-top: 15px;
+    }
+
+    .riw {
+        position: absolute;
+        width: 322px;
+        height: 30px;
+        top: 465px;
+        left: 352px;
+        font-size: 20px;
+        padding-top: 15px;
+    }
+
+    .rockpaper {
+        position: absolute;
+        width: 322px;
+        height: 30px;
+        top: 735px;
+        left: 0px;
+        font-size: 20px;
+        padding-top: 15px;
+        bottom: 15px;
+    }
+
+
+    
+}
+
+@media (max-width: 640px) {
+    body {
+        max-width: 640px;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .wrapper .main-content {
+        max-width: 555px;
+    }
+
+    h1 {
+        float: none;
+        margin: 0;
+        text-align: center;
+        display: block;
+        max-width: 640px;
+    }
+
+    nav, ul {
+        float: none;
+        text-align: center;
+        display: block;
+        
+    }
+
+    nav {
+        max-width: 640px;
+        margin: 0;
+    }
+
+    li {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 12px;
+    }
+
+    .floats img {
+        float: none;
+        width: 100%;
+    
+    }
+
+    .floats p {
+        padding-top: 20px;
+    }
+
+    .img {
+        display: block;
+    }
+
+    .portfolio img {
+        float: none;
+        display: block;
+        width: 555px;
+    }
+
+    .rockpaper {
+        position: absolute;
+        width: 555px;
+        height: 50px;
+        top: 2075px;
+        left: 0px;
+        font-size: 30px;
+        padding-top: 20px;
+        bottom: 15px;
+    }
+    
+    .hang {
+        position: absolute;
+        width: 555px;
+        height: 50px;
+        top: 315px;
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    
+    .tgame {
+        position: absolute;
+        width: 555px;
+        height: 50px;
+        top: 1190px;
+        left: 0px;
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    
+    .rpggame {
+        position: absolute;
+        width: 555px;
+        height: 50px;
+        top: 745px;
+        left: 0px;
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    
+    .riw {
+        position: absolute;
+        width: 555px;
+        height: 50px;
+        top: 1620px;
+        left: 0px;
+        font-size: 30px;
+        padding-top: 20px;
+    }
+
+}
